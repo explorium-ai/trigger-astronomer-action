@@ -7,7 +7,7 @@ This action triggers an Astronomer DAG
 payload:
   description: 'JSON Payload'
   required: false
-  default: '"config": {"run_type":"PR"}'
+  default: '{}'
 dag_run_id:
   description: 'custom dag run id'
   required: true
