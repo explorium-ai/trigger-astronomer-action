@@ -1,0 +1,37 @@
+name: "Trigger Astronomer DAG Action"
+description: "Trigger an Astronomer DAG"
+author: "Explorium DevOps Team"
+branding:
+  icon: activity
+  color: blue
+inputs:
+  payload:
+    description: 'JSON Payload'
+    required: false
+    default: '{}'
+  dag_run_id:
+    description: 'custom dag run id'
+    required: true
+    default: ''
+  webserver_id:
+    description: 'webserver id'
+    required: true
+    default: 'mycompany.astronomer.run/abcd1234'         
+  dag_name:
+    description: 'dag name'
+    required: true
+    default: ''
+  username: 
+    description: 'username'
+    required: true
+    default: 'user'     
+  password: 
+    description: 'password'
+    required: true
+    default: 'password'         
+outputs:
+  result:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
