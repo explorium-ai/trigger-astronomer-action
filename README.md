@@ -39,7 +39,7 @@ The result of the DAG
 ## Example usage
 
 ```yaml
-uses: explorium-ai/trigger-astronomer-action@v1
+uses: explorium-ai/trigger-astronomer-action@v1.0.0
 with:
   dag_run_id: random-string
   webserver_id: mycompany.astronomer.run/abcd1234
