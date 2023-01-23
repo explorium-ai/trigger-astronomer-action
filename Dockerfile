@@ -1,6 +1,6 @@
 
    
-FROM python:3-slim AS builder
+FROM ghcr.io/stargz-containers/python:3.10-org AS builder
 ADD . /app
 WORKDIR /app
 
